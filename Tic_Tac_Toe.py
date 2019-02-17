@@ -4,16 +4,14 @@
   [4][5][6]
   [7][8][9]
   The game gets two arrays  One for printing and the Other for 
-  Check which place you can insert 'x' or '0' [1,2......9]
-  The second array is small and small in one Until lea() = 0 = []
-  This means that there is no more space available in arr It means There are no winners
-  else In some iteration there is a winner and he prints who win.
-
-  *python Tic_Tac_Toe
+  Check which place you can insert 'x' or '0' .
+  The second array  is Going smaller during the game Until Length = 0 ([]==0) ,
+  This means that there is no more space available in arr ,It means There are no winners!
+  Other if In some iteration there is a winner , The program will print out which of the players is the winner .
 
 '''
-import os  # for os.system()
 
+import os  # for os.system()
 
 # The function checks that the player selects between 'X' and '0'
 def Not_good_choice():
