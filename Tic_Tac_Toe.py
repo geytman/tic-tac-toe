@@ -18,9 +18,9 @@ import os  # for os.system()
 # The function checks that the player selects between 'X' and '0'
 def Not_good_choice():
     while (True):
-        print("Please pick a marker 'x' or 'O':")
+        print("Please pick a marker 'x' or '0':")
         choice = input()
-        if choice == "x" or choice == 0:
+        if choice == "x" or choice == '0':
             return choice
 
 
@@ -29,7 +29,7 @@ def Not_good_num(board_begin):
     while (True):
         print(
             "Please choose a place from the numbers Who remained on the board")
-        choice = input()
+        choice = int(input())
         if choice in board_begin:
             return choice
 
@@ -124,7 +124,7 @@ def game():
             print(
                 "player 2 Please make your move typing in the number you want place your item  "
             )
-            position = input()
+            position = int(input())
             if position not in board_begin:
                 position = Not_good_num(board_begin)
 
@@ -141,7 +141,7 @@ def game():
                 break
 
         print("---------------")
-        print("{}").format(print_game)
+        print("{}".format(print_game))
         print("---------------")
         print("You want to start a new game 'yes'/'no' ")
         replay = input()
